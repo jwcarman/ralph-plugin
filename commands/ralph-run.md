@@ -74,7 +74,7 @@ ATTEMPTS: [what you already tried]
 - Do not make commits — the loop runner handles all git operations
 - Do not install packages not already in the project's dependency manifest without noting it in `progress.txt`
 - Do not modify files in `specs/done/`
-- Do not modify `loop.sh` or `PRD.md`
+- Do not modify `ralph-loop.sh` or `PRD.md`
 - Do not add new specs to `specs/` — the human does that (backlog items go in `specs/backlog/`)
 - Do not call external APIs or services unless the spec explicitly requires it and `PRD.md` provides credentials/config
 - Do not delete code that isn't directly replaced by the current spec — note it in `progress.txt` and let the human decide

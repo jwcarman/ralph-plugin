@@ -20,7 +20,7 @@ Ralph is an autonomous spec-by-spec development loop. Bash controls the outer lo
 ## How the loop works
 
 ```
-loop.sh (bash)
+ralph-loop.sh (bash)
   └── calls: claude --dangerously-skip-permissions --print "/ralph-run"
         └── picks lowest-numbered spec in specs/
         └── implements, verifies, moves to specs/done/
