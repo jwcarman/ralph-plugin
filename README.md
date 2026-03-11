@@ -91,6 +91,7 @@ The loop runs until all specs are done or it hits something it can't resolve.
 | `/ralph-plugin:run` | Execute one iteration (used by `ralph-loop.sh`) |
 | `/ralph-plugin:status` | Show progress, remaining specs, recent commits |
 | `/ralph-plugin:promote` | Promote `specs/backlog/` items to the active queue |
+| `/ralph-plugin:update` | Update `ralph-loop.sh` and other plugin-managed assets to the latest versions |
 
 ---
 
