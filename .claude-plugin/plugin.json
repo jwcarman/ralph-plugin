@@ -8,5 +8,6 @@
   },
   "homepage": "https://github.com/jwcarman/ralph-plugin",
   "repository": "https://github.com/jwcarman/ralph-plugin",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": ["ralph-loop", "autonomous", "tdd", "specs", "ai-driven", "workflow", "automation"]
 }

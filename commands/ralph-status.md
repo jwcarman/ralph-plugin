@@ -1,5 +1,6 @@
 ---
-description: "Show Ralph Loop progress: current state, remaining specs, completed specs, recent commits"
+description: "Show Ralph Loop progress and remaining specs"
+allowed-tools: ["Read", "Bash(ls:*)", "Bash(git:*)"]
 ---
 
 # Ralph Status

@@ -1,5 +1,5 @@
 ---
-description: "Execute one Ralph Loop iteration: pick next spec, implement it, verify, update progress"
+description: "Execute one Ralph Loop iteration"
 ---
 
 # Ralph Run — Single Iteration

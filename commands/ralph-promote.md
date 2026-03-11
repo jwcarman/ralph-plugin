@@ -1,5 +1,6 @@
 ---
-description: "Promote specs from specs/backlog/ into the active queue with a numeric prefix"
+description: "Promote backlog specs into the active queue"
+allowed-tools: ["Read", "Bash(ls:*)", "Bash(mv:*)"]
 ---
 
 # Ralph Promote

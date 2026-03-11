@@ -1,5 +1,6 @@
 ---
-description: "Scaffold the Ralph Loop into the current git repo"
+description: "Scaffold Ralph Loop into the current git repo"
+allowed-tools: ["Bash", "Read", "Write"]
 ---
 
 # Ralph Init

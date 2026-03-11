@@ -1,5 +1,6 @@
 ---
-description: "Guided brainstorming to write a new Ralph Loop spec"
+description: "Write a new spec with guided brainstorming"
+allowed-tools: ["Read", "Write", "Bash(ls:*)"]
 ---
 
 # Ralph Spec
