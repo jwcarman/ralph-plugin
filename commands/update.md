@@ -18,6 +18,7 @@ with the latest versions from the plugin.
    cp "${CLAUDE_PLUGIN_ROOT}/assets/ralph-loop.sh" ./ralph-loop.sh
    chmod +x ./ralph-loop.sh
    cp "${CLAUDE_PLUGIN_ROOT}/assets/PRD.example.md" ./PRD.example.md
+   mkdir -p specs
    cp "${CLAUDE_PLUGIN_ROOT}/assets/specs/000-spec-template.md.example" \
      ./specs/000-spec-template.md.example
    ```
