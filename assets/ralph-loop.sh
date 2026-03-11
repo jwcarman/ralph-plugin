@@ -20,6 +20,8 @@
 
 set -euo pipefail
 
+trap 'echo; log "Interrupted. Exiting."; exit 130' INT TERM
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MAX_ITERATIONS="${MAX_ITERATIONS:-100}"
 PAUSE_SECONDS="${PAUSE_SECONDS:-10}"
@@ -98,14 +100,14 @@ run_iteration() {
   log "--- Iteration $iteration ---"
 
   if $DRY_RUN; then
-    log "DRY RUN — would run: claude --dangerously-skip-permissions --print \"/ralph-run\""
+    log "DRY RUN — would run: claude --dangerously-skip-permissions --print \"/ralph-plugin:run\""
     return 0
   fi
 
   claude \
     --dangerously-skip-permissions \
     --print \
-    "/ralph-run" \
+    "/ralph-plugin:run" \
     2>&1 | tee -a "$LOG_FILE"
 }
 
