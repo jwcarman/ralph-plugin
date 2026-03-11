@@ -30,8 +30,16 @@ Every Claude session starts with a clean context window. Files and git history a
 
 ## Installation
 
-```bash
-/plugin install jwcarman/ralph-plugin
+Add the marketplace (one-time setup):
+
+```
+/plugin marketplace add jwcarman/jwcarman-marketplace
+```
+
+Then install the plugin:
+
+```
+/plugin install ralph-plugin@jwcarman-marketplace
 ```
 
 ---
