@@ -1,0 +1,12 @@
+{
+  "name": "ralph-plugin",
+  "description": "Manage Ralph Loop projects — an AI-driven spec-by-spec autonomous development workflow",
+  "version": "1.0.0",
+  "author": {
+    "name": "James Carman",
+    "email": "jcarman@apache.org"
+  },
+  "homepage": "https://github.com/jwcarman/ralph-plugin",
+  "repository": "https://github.com/jwcarman/ralph-plugin",
+  "license": "MIT"
+}

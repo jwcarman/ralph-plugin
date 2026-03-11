@@ -1,6 +1,6 @@
-# ralph-skill
+# ralph-plugin
 
-A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill for managing [Ralph Loop](https://github.com/jwcarman/ralph) projects.
+A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin for managing [Ralph Loop](https://github.com/jwcarman/ralph) projects.
 
 ## What it does
 
@@ -16,18 +16,8 @@ Adds a `/ralph` command to Claude Code with subcommands for the full Ralph Loop 
 
 ## Installation
 
-### Option A: Upload via Claude UI
-
-1. Download [`ralph-skill.zip`](https://github.com/jwcarman/ralph-skill/releases/latest/download/ralph-skill.zip)
-2. Open Claude → **Settings → Capabilities → Skills → Add skill**
-3. Upload `ralph-skill.zip`
-
-### Option B: Claude Code skills directory
-
 ```bash
-# Clone directly into your Claude Code skills directory
-git clone https://github.com/jwcarman/ralph-skill.git ~/.claude/skills/ralph-skill
-# The ralph-loop/ folder inside is the skill — Claude Code picks it up automatically
+/plugin install jwcarman/ralph-plugin
 ```
 
 ## Usage
@@ -45,16 +35,6 @@ Follow the prompts to set up the Ralph Loop, write your first spec, and start th
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed and authenticated
 - A Claude Max subscription (recommended — runs against your subscription, not API credits)
 - Git
-
-## Building from source
-
-```bash
-git clone https://github.com/jwcarman/ralph-skill.git
-cd ralph-skill
-chmod +x package.sh
-./package.sh
-# Upload the generated ralph-skill.zip via Claude > Settings > Capabilities > Skills
-```
 
 ## Related
 
