@@ -1,6 +1,6 @@
 ---
 description: "Promote backlog specs into the active queue"
-allowed-tools: ["Read", "Bash(ls:*)", "Bash(mv:*)"]
+allowed-tools: ["Read", "Write", "Bash"]
 ---
 
 # Ralph Promote

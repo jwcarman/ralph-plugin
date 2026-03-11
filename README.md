@@ -43,7 +43,7 @@ Every Claude session starts with a clean context window. Files and git history a
 Open Claude Code in any git repo and run:
 
 ```
-/ralph-plugin:ralph-init
+/ralph-plugin:init
 ```
 
 This will:
@@ -78,11 +78,11 @@ The loop runs until all specs are done or it hits something it can't resolve.
 
 | Command | What it does |
 |---------|-------------|
-| `/ralph-plugin:ralph-init` | Scaffold Ralph Loop + guided PRD setup |
-| `/ralph-plugin:ralph-spec` | Write a new spec with guided brainstorming |
-| `/ralph-plugin:ralph-run` | Execute one iteration (used by `ralph-loop.sh`) |
-| `/ralph-plugin:ralph-status` | Show progress, remaining specs, recent commits |
-| `/ralph-plugin:ralph-promote` | Promote `specs/backlog/` items to the active queue |
+| `/ralph-plugin:init` | Scaffold Ralph Loop + guided PRD setup |
+| `/ralph-plugin:spec` | Write a new spec with guided brainstorming |
+| `/ralph-plugin:run` | Execute one iteration (used by `ralph-loop.sh`) |
+| `/ralph-plugin:status` | Show progress, remaining specs, recent commits |
+| `/ralph-plugin:promote` | Promote `specs/backlog/` items to the active queue |
 
 ---
 

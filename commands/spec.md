@@ -1,13 +1,13 @@
 ---
 description: "Write a new spec with guided brainstorming"
-allowed-tools: ["Read", "Write", "Bash(ls:*)"]
+allowed-tools: ["Read", "Write", "Bash"]
 ---
 
 # Ralph Spec
 
 Guide the user through brainstorming a new spec, then write the file.
 
-1. Check that `PRD.md` exists — if not, tell the user to run `/ralph-init` first
+1. Check that `PRD.md` exists — if not, tell the user to run `/ralph-plugin:init` first
 2. Read `PRD.md` to understand the project
 3. Read `progress.txt` and `ls specs/` to understand current state
 4. Ask questions one at a time (multiple choice preferred) to understand:
