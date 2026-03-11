@@ -1,6 +1,6 @@
 ---
-name: ralph
-description: Use when working with a Ralph Loop project — initializing ralph in a new repo, writing specs through guided brainstorming, running the loop, checking status, or promoting backlog items to the work queue.
+name: Ralph Loop
+description: Manage Ralph Loop projects. Commands: init (scaffold into repo), spec (write a new spec), run (start the loop), status (check progress), promote (promote backlog items).
 ---
 
 # Ralph Loop
