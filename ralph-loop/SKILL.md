@@ -1,6 +1,6 @@
 ---
-name: Ralph Loop
-description: Manage Ralph Loop projects. Commands: init (scaffold into repo), spec (write a new spec), run (start the loop), status (check progress), promote (promote backlog items).
+name: ralph-loop
+description: Manages Ralph Loop autonomous coding projects. Use when setting up or running the Ralph Loop — an AI-driven spec-by-spec development workflow where Claude implements features autonomously. Trigger phrases: "set up ralph", "init ralph", "write a spec", "start the loop", "ralph status", "promote backlog", "/ralph".
 ---
 
 # Ralph Loop

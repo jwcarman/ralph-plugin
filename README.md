@@ -16,9 +16,19 @@ Adds a `/ralph` command to Claude Code with subcommands for the full Ralph Loop 
 
 ## Installation
 
+### Option A: Upload via Claude UI
+
 1. Download [`ralph-skill.zip`](https://github.com/jwcarman/ralph-skill/releases/latest/download/ralph-skill.zip)
-2. Open Claude → **Customize → Skills → Add skill**
+2. Open Claude → **Settings → Capabilities → Skills → Add skill**
 3. Upload `ralph-skill.zip`
+
+### Option B: Claude Code skills directory
+
+```bash
+# Clone directly into your Claude Code skills directory
+git clone https://github.com/jwcarman/ralph-skill.git ~/.claude/skills/ralph-skill
+# The ralph-loop/ folder inside is the skill — Claude Code picks it up automatically
+```
 
 ## Usage
 
@@ -43,7 +53,7 @@ git clone https://github.com/jwcarman/ralph-skill.git
 cd ralph-skill
 chmod +x package.sh
 ./package.sh
-# Upload the generated ralph-skill.zip via Claude > Customize > Skills
+# Upload the generated ralph-skill.zip via Claude > Settings > Capabilities > Skills
 ```
 
 ## Related
