@@ -34,6 +34,17 @@ Work through `specs/` in filename order (numerically prefixed). Pick the lowest-
 
 Do not mark a spec done until its acceptance criteria are machine-verified passing. "It looks right" is not verification. Run the commands.
 
+## Superpowers integration (optional)
+
+If the `superpowers` skills are installed, invoke them at the appropriate steps to reinforce discipline. If they are not installed, the built-in steps above provide equivalent guidance.
+
+| Step | Skill to invoke |
+|------|----------------|
+| Before step 4 (Plan) | `superpowers:brainstorming` |
+| Before step 5 (Implement) | `superpowers:test-driven-development` |
+| When step 7 reveals persistent failures | `superpowers:systematic-debugging` |
+| Before step 9 (moving spec to done/) | `superpowers:verification-before-completion` |
+
 ## Verification discipline
 
 The test/build output is your source of truth. Not your judgment about whether the code looks correct. Run the commands, read every line of output, fix what fails.

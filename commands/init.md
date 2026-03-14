@@ -93,3 +93,16 @@ Tell the user:
 - ✅ `PRD.md` written
 - ✅ Spec template ready at `specs/000-spec-template.md.example`
 - Next step: run `/ralph-spec` to write your first spec, then `./ralph-loop.sh` to start the loop
+
+Check whether the superpowers plugin is installed by running:
+```bash
+ls ~/.claude/plugins/cache/superpowers-marketplace 2>/dev/null
+```
+
+If the directory does not exist, suggest the user install it for enhanced spec brainstorming and iteration discipline:
+
+> **Optional but recommended:** Install the `superpowers` plugin to get richer brainstorming in `/ralph-spec` and stronger discipline during the loop:
+> ```
+> /plugin marketplace add obra/superpowers-marketplace
+> /plugin install superpowers@superpowers-marketplace
+> ```
