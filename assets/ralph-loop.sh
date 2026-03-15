@@ -22,7 +22,7 @@
 
 set -euo pipefail
 
-trap 'echo; log "Interrupted. Exiting."; exit 130' INT TERM
+trap 'echo; log "Interrupted. Exiting."; kill 0 2>/dev/null; exit 130' INT TERM
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MAX_ITERATIONS="${MAX_ITERATIONS:-100}"
