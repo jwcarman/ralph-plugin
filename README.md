@@ -91,6 +91,7 @@ The loop runs until all specs are done or it hits something it can't resolve.
 | `/ralph-plugin:run` | Execute one iteration (used by `ralph-loop.sh`) |
 | `/ralph-plugin:status` | Show progress, remaining specs, recent commits |
 | `/ralph-plugin:promote` | Promote `specs/backlog/` items to the active queue |
+| `/ralph-plugin:resume` | Resolve a `NEEDS_HUMAN` blocker and reset state so the loop can continue |
 | `/ralph-plugin:update` | Update `ralph-loop.sh` and other plugin-managed assets to the latest versions |
 
 ---
@@ -119,11 +120,13 @@ git log --oneline
 ### Run the loop
 
 ```bash
-./ralph-loop.sh                    # run until done or NEEDS_HUMAN
-./ralph-loop.sh --once             # single iteration
-./ralph-loop.sh --dry-run          # preview without executing
-MAX_ITERATIONS=20 ./ralph-loop.sh  # cap total iterations
-PAUSE_SECONDS=30 ./ralph-loop.sh   # slow down between iterations
+./ralph-loop.sh                         # run until NEEDS_HUMAN or idle limit reached
+./ralph-loop.sh --once                  # single iteration
+./ralph-loop.sh --dry-run               # preview without executing
+./ralph-loop.sh --no-idle               # stop immediately when specs/ is empty
+MAX_ITERATIONS=20 ./ralph-loop.sh       # cap total iterations
+PAUSE_SECONDS=30 ./ralph-loop.sh        # slow down between iterations
+MAX_IDLE_ATTEMPTS=5 ./ralph-loop.sh     # fewer idle checks before giving up
 ```
 
 ### Emergency controls
@@ -168,12 +171,13 @@ If the agent discovers work that's out of scope for the current spec, it writes 
 
 ## When the loop stops itself
 
-If the loop writes `STATUS: NEEDS_HUMAN` to `progress.txt`, read the `REASON:` and `ATTEMPTS:` fields to understand what happened.
+If the loop writes `STATUS: NEEDS_HUMAN` to `progress.txt`, run:
 
-To resume:
-1. Resolve the blocker
-2. Edit `progress.txt` — change `STATUS: NEEDS_HUMAN` to `STATUS: MORE_WORK`
-3. Restart `./ralph-loop.sh`
+```
+/ralph-plugin:resume
+```
+
+This will show you what Ralph was stuck on, walk you through resolving it, and reset `progress.txt` so you can restart with `./ralph-loop.sh`.
 
 ---
 
