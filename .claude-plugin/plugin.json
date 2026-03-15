@@ -1,7 +1,7 @@
 {
   "name": "ralph-plugin",
   "description": "Manage Ralph Loop projects — an AI-driven spec-by-spec autonomous development workflow",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "author": {
     "name": "James Carman",
     "email": "jcarman@apache.org"
