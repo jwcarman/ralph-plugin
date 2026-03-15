@@ -6,6 +6,27 @@ description: "Execute one Ralph Loop iteration"
 
 Execute one iteration of the Ralph Loop. Pick one spec, do the work, verify it passes, and update `progress.txt`. Then stop — the loop runner will restart for the next iteration.
 
+## Narration
+
+As you work, write brief progress lines so the human can follow along in the log. Output one line at each major step — do not wait until the end. Use this format:
+
+```
+▸ Reading spec: 003-add-search.md
+▸ Reading PRD.md
+▸ Exploring codebase
+▸ Planning approach
+▸ Implementing
+▸ Running tests
+▸ Tests passed — moving spec to done/
+▸ Done. Next: 004-pagination.md
+```
+
+Keep each line short. One line per step. If tests fail and you're iterating, say so:
+```
+▸ Tests failed — fixing
+▸ Running tests again
+```
+
 ## Before starting
 
 Run these commands to orient yourself:
